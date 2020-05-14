@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/classi-landing/static/css/main.a645b7b8.chunk.css",
+    "main.js": "/classi-landing/static/js/main.097b1afb.chunk.js",
+    "main.js.map": "/classi-landing/static/js/main.097b1afb.chunk.js.map",
+    "runtime-main.js": "/classi-landing/static/js/runtime-main.aa641469.js",
+    "runtime-main.js.map": "/classi-landing/static/js/runtime-main.aa641469.js.map",
+    "static/js/2.97edf61c.chunk.js": "/classi-landing/static/js/2.97edf61c.chunk.js",
+    "static/js/2.97edf61c.chunk.js.map": "/classi-landing/static/js/2.97edf61c.chunk.js.map",
+    "index.html": "/classi-landing/index.html",
+    "precache-manifest.ac05c5d08a4c6b8665ab7491730a4c91.js": "/classi-landing/precache-manifest.ac05c5d08a4c6b8665ab7491730a4c91.js",
+    "service-worker.js": "/classi-landing/service-worker.js",
+    "static/css/main.a645b7b8.chunk.css.map": "/classi-landing/static/css/main.a645b7b8.chunk.css.map",
+    "static/js/2.97edf61c.chunk.js.LICENSE.txt": "/classi-landing/static/js/2.97edf61c.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/classi-landing/static/media/logo.5d5d9eef.svg",
+    "static/media/overview_image.png": "/classi-landing/static/media/overview_image.913b927c.png",
+    "static/media/overview_shape1.svg": "/classi-landing/static/media/overview_shape1.6b75b45e.svg",
+    "static/media/overview_shape2.png": "/classi-landing/static/media/overview_shape2.9fa80aa8.png",
+    "static/media/overview_shape3.png": "/classi-landing/static/media/overview_shape3.3d6ca469.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aa641469.js",
+    "static/js/2.97edf61c.chunk.js",
+    "static/css/main.a645b7b8.chunk.css",
+    "static/js/main.097b1afb.chunk.js"
+  ]
+}

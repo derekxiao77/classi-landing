@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "94caff999910dc9473a946f3353295fb",
+    "revision": "f1a113d5c73a9f57a6fbe535f4405aab",
     "url": "/classi-landing/index.html"
   },
   {
-    "revision": "80f23f8773bf562329f3",
-    "url": "/classi-landing/static/css/main.a645b7b8.chunk.css"
+    "revision": "dd14b4aec7b2bf0c9761",
+    "url": "/classi-landing/static/css/main.81f94f67.chunk.css"
   },
   {
-    "revision": "0597eaf33989bb4c3c06",
-    "url": "/classi-landing/static/js/2.97edf61c.chunk.js"
+    "revision": "9fd3fe31b925cc20a9d9",
+    "url": "/classi-landing/static/js/2.bb0f991b.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/classi-landing/static/js/2.97edf61c.chunk.js.LICENSE.txt"
+    "url": "/classi-landing/static/js/2.bb0f991b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "80f23f8773bf562329f3",
-    "url": "/classi-landing/static/js/main.097b1afb.chunk.js"
+    "revision": "dd14b4aec7b2bf0c9761",
+    "url": "/classi-landing/static/js/main.6c963f2a.chunk.js"
   },
   {
     "revision": "0560d3aa827cf61227dd",
@@ -42,5 +42,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3d6ca469d7e7b95799595a02fb33b1be",
     "url": "/classi-landing/static/media/overview_shape3.3d6ca469.png"
+  },
+  {
+    "revision": "c707d9ef22add952fcbfa3289de100d5",
+    "url": "/classi-landing/static/media/student_image.c707d9ef.png"
   }
 ]);

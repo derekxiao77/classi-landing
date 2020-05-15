@@ -7,6 +7,19 @@
   width: 80%;
 }
 
+.Landing-page {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Classi-logo {
+  height: 26px;
+  width: 112px;
+}
+
 .Welcome-content-container {
   position: absolute;
   left: 50px; 
@@ -118,56 +131,49 @@
   color: #FFFFFF;
 }
 
-.Landing-page {
-  background-color: #FFFFFF;
+.Selectable-tiles {
+  margin-top: 30px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: space-between;
 }
 
-.Classi-logo {
-  height: 26px;
-  width: 112px;
+.Student-content-container {
+  position: absolute;
+  right: 50px; 
+  align-self: center;
+
+  width: 45%;
 }
 
-/* Images */
-.Classi-overview-image {
-  position: absolute;
-  right: 0px;
-  top: -20px;
-  width: auto;
-  height: 520px;
-}
-
-.Classi-overview-shape1 {
-  position: absolute;
-  top: 240px;
-  right: -100px;
-  width: 600px;
-}
-
-/* ellipse */
-.Classi-overview-shape2 {
-  position: absolute;
-  right: 400px;
-  top: -40px;
-  width: 200px;
-}
-/* large circle */
-.Classi-overview-shape3 {
-  position: absolute;
-  right: 120px;
-  top: 20px;
+.Value-tile {
   width: 150px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.02);
+  border-radius: 20px;
 }
 
-/* smal circle */
-.Classi-overview-shape4 {
-  position: absolute;
-  right: 500px;
-  top: 0px;
-  width: 40px;
+.Tile-icon-container {
+  position: relative;
+  top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.Tile-label {
+  position: relative;
+  top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: center;
+  color: #334E68;
 }
 
 /* Font Section */
@@ -181,6 +187,29 @@ h1 {
   color: #102A43;
 }
 
+h2 {
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 44px;
+  color: #102A43;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  color: #102A43;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
 span {
   font-family: Circular Std;
   font-style: normal;
@@ -188,7 +217,7 @@ span {
   font-size: 15px;
   line-height: 19px;
   color: #334E68;
-  white-space: nowrap;
+  /*white-space: nowrap;*/
 }
 
 

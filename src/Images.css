@@ -1,0 +1,73 @@
+/* Images */
+.Classi-overview-image {
+    position: absolute;
+    right: 0px;
+    top: -20px;
+    width: auto;
+    height: 520px;
+  }
+  
+  .Classi-overview-shape1 {
+    position: absolute;
+    top: 240px;
+    right: -100px;
+    width: 600px;
+  }
+  
+  /* ellipse */
+  .Classi-overview-shape2 {
+    position: absolute;
+    right: 400px;
+    top: -40px;
+    width: 200px;
+  }
+  /* large circle */
+  .Classi-overview-shape3 {
+    position: absolute;
+    right: 120px;
+    top: 20px;
+    width: 150px;
+  }
+  
+  /* smal circle */
+  .Classi-overview-shape4 {
+    position: absolute;
+    right: 500px;
+    top: 0px;
+    width: 40px;
+  }
+
+  /* ellipse */
+  .Classi-student-shape2 {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 200px;
+  }
+  /* large circle */
+  .Classi-student-shape3 {
+    position: absolute;
+    left: 280px;
+    bottom: -20px;
+    width: 150px;
+  }
+  
+  /* smal circle */
+  .Classi-student-shape4 {
+    position: absolute;
+    top: 56px;
+    left: 350px;
+    width: 40px;
+  }
+
+.Classi-student-image {
+    position: absolute;
+    left: 140px;
+    top: 30px;
+    width: auto;
+    height: 450px;
+  }
+  
+  .Tile-icon {
+    height: 36px;
+  }

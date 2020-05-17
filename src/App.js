@@ -2,7 +2,9 @@ import React from 'react';
 import logo from './assets/logo.svg';
 import './App.css';
 import './Images.css';
-const assets = require('./assets/assets.js')
+import ValueTile from './components/ValueTile';
+import Header from './components/Header';
+
     /*
   <div class="overview-section">
     <div class="left-align-content" style="position:absolute; width:315px; height:36px; top:125px; background:#FFFFFF;
@@ -17,16 +19,6 @@ const assets = require('./assets/assets.js')
   */
 
 // <div className = 'Tile-label'>{props.valueText}</div>
-function ValueTile(props) {
-    const tile = 
-        <div className = 'Value-tile'>
-            <div className="Tile-icon-container">
-                <img src={assets[props.imagePath]} alt="" className="Tile-icon"/>
-            </div>
-            <div className = 'Tile-label'>{props.valueText}</div>
-        </div>;
-    return tile;
-}
 
 function SubmitEmail() {
     const container =
@@ -78,12 +70,7 @@ function App() {
   return ( 
     <div>
         <div className="Landing-page">
-            <div className='Header-container'>
-                <img src={require("./assets/classi_logo.png")} alt="" className="Classi-logo" />
-                <span style={{marginLeft:'37px'}}>#WorkoutWithFriends</span>
-                <span style={{marginLeft:'auto', marginRight:'30px'}}>Watch a class</span>
-                <span>Teach a class</span>
-            </div>
+            <Header />
             <ContentSection color="#F4F5F6">
                 <div className = "Welcome-content-container">
                     <LaunchDate/>

@@ -1,0 +1,16 @@
+.header {
+    margin-top: 2%;
+    width: 80%;
+    outline: solid gray 1px;
+    align-items: center;
+}
+
+.navLeft {
+    outline: solid red 2px;
+    float: left;
+}
+
+.navRight {
+    outline: solid green 2px;
+    float: right;
+}

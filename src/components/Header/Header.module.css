@@ -1,0 +1,12 @@
+.headerContainer {
+    display: flex;
+    align-items: center;
+  
+    margin-top: 20px;
+    width: 80%;
+}
+
+.classiLogo {
+    height: 26px;
+    width: 112px;
+}

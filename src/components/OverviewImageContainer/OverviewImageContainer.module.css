@@ -1,0 +1,37 @@
+.phoneImage {
+    position: absolute;
+    right: 0px;
+    top: -20px;
+    width: auto;
+    height: 520px;
+  }
+  
+  .overviewShape1 {
+    position: absolute;
+    top: 240px;
+    right: -100px;
+    width: 600px;
+  }
+  
+  /* ellipse */
+  .overviewShape2 {
+    position: absolute;
+    right: 400px;
+    top: -40px;
+    width: 200px;
+  }
+  /* large circle */
+  .overviewShape3 {
+    position: absolute;
+    right: 120px;
+    top: 20px;
+    width: 150px;
+  }
+  
+  /* smal circle */
+  .overviewShape4 {
+    position: absolute;
+    right: 500px;
+    top: 0px;
+    width: 40px;
+  }

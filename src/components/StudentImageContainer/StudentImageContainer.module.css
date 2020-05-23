@@ -1,0 +1,30 @@
+  /* ellipse */
+  .shape2 {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 200px;
+  }
+  /* large circle */
+  .shape3 {
+    position: absolute;
+    left: 280px;
+    bottom: -20px;
+    width: 150px;
+  }
+  
+  /* smal circle */
+  .shape4 {
+    position: absolute;
+    top: 56px;
+    left: 350px;
+    width: 40px;
+  }
+
+.phoneImage {
+    position: absolute;
+    left: 140px;
+    top: 30px;
+    width: auto;
+    height: 450px;
+  }

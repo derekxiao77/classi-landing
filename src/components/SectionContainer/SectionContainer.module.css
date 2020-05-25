@@ -1,3 +1,14 @@
+.sectionContainerLayoutMobile {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 90%;
+    height: 500px;
+    margin: 20px 0px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
 .sectionContainerLayout {
     display: flex;
     position: relative;

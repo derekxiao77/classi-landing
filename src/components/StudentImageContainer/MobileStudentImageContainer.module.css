@@ -1,0 +1,44 @@
+.imageContainerMobile {
+    align-self: center;
+
+    width: 90%;
+    margin-top: 20px;
+}
+
+.phoneImageMobile {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    height: 450px;
+}
+
+/* ellipse */
+.shape2Mobile {
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    width: 200px;
+}
+
+/* large circle */
+.shape3Mobile {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 150px;
+}
+
+/* smal circle */
+.shape4Mobile {
+    position: absolute;
+    top: 48%;
+    left: 59%;
+    width: 40px;
+}
+
+.shape1Mobile {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 200px;
+}

@@ -1,0 +1,38 @@
+.phoneImageMobile {
+    position: absolute;
+    left: 45%;
+    bottom: 58%;
+    width: auto;
+    height: 520px;
+  }
+  
+  /* large circle */
+  .overviewShape3Mobile {
+    position: absolute;
+    right: 90%;
+    top: -15%;
+    width: 150px;
+  }
+
+  .overviewShape1Mobile {
+    position: absolute;
+    top: 90%;
+    left: -10%;
+    width: 150%;
+  }
+  
+  /* ellipse */
+  .overviewShape2Mobile {
+    position: absolute;
+    bottom: 85%;
+    right: 70%;
+    width: 200px;
+  }
+  
+  /* smal circle */
+  .overviewShape4Mobile {
+    position: absolute;
+    right: -3%;
+    top: 28%;
+    width: 40px;
+  }

@@ -1,8 +1,12 @@
 .instructorContentContainer {
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
     position: absolute;
     left: 50px;
     width: 45%;
+    height: 100%;
 }
 
 .tilesContainer {
@@ -69,3 +73,34 @@
     text-align: center;
     color: #334E68;
 }
+
+.phoneImage {
+    position: absolute;
+    right: 140px;
+    top: 30px;
+    width: auto;
+    height: 450px;
+  }
+
+/* ellipse */
+  .shape2 {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    width: 200px;
+  }
+  /* large circle */
+  .shape3 {
+    position: absolute;
+    right: 280px;
+    bottom: -20px;
+    width: 150px;
+  }
+  
+  /* smal circle */
+  .shape4 {
+    position: absolute;
+    top: 56px;
+    right: 350px;
+    width: 40px;
+  }

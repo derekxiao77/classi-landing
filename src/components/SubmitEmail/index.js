@@ -1,6 +1,10 @@
 import React from 'react';
-import styles from './SubmitEmail.module.css';
+import stylesWeb from './SubmitEmail.module.css';
+import stylesMobile from './SubmitEmailMobile.module.css';
 import { useFormik } from 'formik';
+import {isMobile} from 'react-device-detect'
+
+const styles = {...stylesWeb, ...stylesMobile}
 
 function SubmitEmail() {
     // Pass the useFormik() hook initial form values and a submit function that will
@@ -14,6 +18,22 @@ function SubmitEmail() {
         },
     });
 
+    if (isMobile) {
+        return (
+            <form onSubmit={formik.handleSubmit} className= {styles.emailContainerMobile}>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    onChange={formik.handleChange}
+                    value={formik.values.email}
+                    placeholder="Your Email"
+                    className={styles.inputFieldMobile}
+                />
+                <button type="submit" className={styles.submitEmailButtonMobile}>Get Early Access</button>
+            </form>
+        );
+    }
     return (
         <form onSubmit={formik.handleSubmit} className= {styles.emailContainer}>
             <input

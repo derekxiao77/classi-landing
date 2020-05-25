@@ -1,48 +1,45 @@
 .overviewContentContainer {
-    position: absolute;
-    left: 50px; 
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
+  position: absolute;
+  left: 50px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  z-index: 1;
 }
 
 .welcomeText {
-    width: 480px;
-    word-wrap: normal;
-  }
+  width: 480px;
+  word-wrap: normal;
+}
 
-  .launchDateContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  
-    width: 315px;
-    height: 36px;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-  }
+.launchDateContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 315px;
+  height: 36px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
 
-  .launchDateButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    width: 51px;
-    height: 26px;
-    background-color: #FF0E83;
-    border-radius: 100px;
-  
-    font-family: Circular Std;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 14px;
-    line-height: 18px;
-    color: #FFFFFF; 
-  }
+.launchDateButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 51px;
+  height: 26px;
+  background-color: #FF0E83;
+  border-radius: 100px;
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
 
-  .celebrateEmoji {
-    width: 19px;
-    height: 19px;
-  }
+.celebrateEmoji {
+  width: 19px;
+  height: 19px;
+}

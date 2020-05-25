@@ -1,8 +1,14 @@
 import React from 'react';
-import styles from './StudentTiles.module.css';
+import stylesWeb from './StudentTiles.module.css';
+import stylesMobile from './MobileStudentTiles.module.css';
 import friendsIcon from "../../assets/friends_icon.png";
 import clapIcon from "../../assets/clap_icon.png";
 import praiseIcon from "../../assets/praise_icon.png";
+import { isMobile } from 'react-device-detect'
+
+import StudentImageContainer from '../StudentImageContainer'
+
+const styles = { ...stylesWeb, ...stylesMobile }
 
 const tileState = {
     Friends: 1,
@@ -11,7 +17,7 @@ const tileState = {
 };
 
 function ValueTile(props) {
-    if (props.thisTile == props.selectedTile) {
+    if (props.thisTile === props.selectedTile) {
         return (
             <button className={styles.selectedTile} onClick={props.onClick}>
                 <div className={styles.tileIconContainer}>
@@ -36,7 +42,7 @@ function ValueTile(props) {
 function ContentFriends() {
     return (
         <div>
-            <h3>#ClassiWithFriends</h3>
+            <h3>#WatchOnClassi</h3>
             <h2>Fitness is more fun with friends</h2>
             <span>Stay healthy and hang out with your friends at the same time.
             Turn any live stream into a video chat by creating a private group
@@ -49,7 +55,7 @@ function ContentFriends() {
 function ContentFree() {
     return (
         <div>
-            <h3>#FreeClassi</h3>
+            <h3>#WatchOnClassi</h3>
             <h2>Any live class. Any instructor. Free.</h2>
             <span>
                 We believe that staying healthy shouldn't cost money.
@@ -63,7 +69,7 @@ function ContentFree() {
 function ContentGoals() {
     return (
         <div>
-            <h3>#LiveClassi</h3>
+            <h3>#WatchOnClassi</h3>
             <h2>The largest selection of live fitness classes</h2>
             <span>
                 Whether you want to eat healthier or be more active,
@@ -75,10 +81,10 @@ function ContentGoals() {
 }
 
 function ContentConditional(props) {
-    if (props.content == tileState.Friends) {
+    if (props.content === tileState.Friends) {
         return <ContentFriends />;
     }
-    else if (props.content == tileState.Free) {
+    else if (props.content === tileState.Free) {
         return <ContentFree />;
     }
     else {
@@ -116,16 +122,31 @@ class StudentTiles extends React.Component {
     }
 
     render() {
+        if (isMobile) {
+            return (
+                <div style={{marginLeft: "5%"}}>
+                    <StudentImageContainer content={this.state.content} />
+                    <div className={styles.studentContentContainerMobile}>
+                        <ContentConditional content={this.state.content} />
+                        <div className={styles.tilesContainer}>
+                            <ValueTile image={friendsIcon} valueText="Watch with friends" thisTile={tileState.Friends} selectedTile={this.state.content} onClick={this.friendsClick} />
+                            <ValueTile image={clapIcon} valueText="Any live class. Free." thisTile={tileState.Free} selectedTile={this.state.content} onClick={this.freeClick} />
+                            <ValueTile image={praiseIcon} valueText="Reach your fitness goals" thisTile={tileState.Goals} selectedTile={this.state.content} onClick={this.goalsClick} />
+                        </div>
+                    </div>
+                </div>
+            );
+        }
         return (
-            /*<button onClick={this.handleClick}>
-              {this.state.isToggleOn ? 'ON' : 'OFF'}
-            </button>*/
-            <div className={styles.studentContentContainer}>
-                <ContentConditional content={this.state.content} />
-                <div className={styles.tilesContainer}>
-                    <ValueTile image={friendsIcon} valueText="Watch with friends" thisTile={tileState.Friends} selectedTile={this.state.content} onClick={this.friendsClick} />
-                    <ValueTile image={clapIcon} valueText="Any live class. Free." thisTile={tileState.Free} selectedTile={this.state.content} onClick={this.freeClick} />
-                    <ValueTile image={praiseIcon} valueText="Reach your fitness goals" thisTile={tileState.Goals} selectedTile={this.state.content} onClick={this.goalsClick} />
+            <div>
+                <StudentImageContainer content={this.state.content} />
+                <div className={styles.studentContentContainer}>
+                    <ContentConditional content={this.state.content} />
+                    <div className={styles.tilesContainer}>
+                        <ValueTile image={friendsIcon} valueText="Watch with friends" thisTile={tileState.Friends} selectedTile={this.state.content} onClick={this.friendsClick} />
+                        <ValueTile image={clapIcon} valueText="Any live class. Free." thisTile={tileState.Free} selectedTile={this.state.content} onClick={this.freeClick} />
+                        <ValueTile image={praiseIcon} valueText="Reach your fitness goals" thisTile={tileState.Goals} selectedTile={this.state.content} onClick={this.goalsClick} />
+                    </div>
                 </div>
             </div>
         );

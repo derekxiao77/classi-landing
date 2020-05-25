@@ -19,16 +19,6 @@
     font-style: normal;
     font-weight: normal;
     line-height: 22px;
-}
-
-.placeholderText {
-    position: absolute;
-    left: 25px;
-    font-family: Circular Std;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 17px;
-    line-height: 22px;
     color: #B0B7C4;
 }
 

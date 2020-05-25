@@ -1,65 +1,66 @@
 import React from 'react';
 import stylesWeb from './SubmitEmail.module.css';
 import stylesMobile from './SubmitEmailMobile.module.css';
-import { useFormik } from 'formik';
-import {isMobile} from 'react-device-detect'
+import MailchimpSubscribe from 'react-mailchimp-subscribe';
 
-const styles = {...stylesWeb, ...stylesMobile}
+const styles = { ...stylesWeb, ...stylesMobile }
 
-function SubmitEmail() {
-    // Pass the useFormik() hook initial form values and a submit function that will
-    // be called when the form is submitted
-    const formik = useFormik({
-        initialValues: {
-            email: '',
-        },
-        onSubmit: values => {
-            alert(JSON.stringify(values, null, 2));
-        },
-    });
+const CustomForm = ({ status, message, onValidated }) => {
+    let email;
+    let inputText;
+    const submit = () =>
+        email &&
+        email.value.indexOf("@") > -1 &&
+        onValidated({
+            EMAIL: email.value
+        });
 
-    if (isMobile) {
-        return (
-            <form onSubmit={formik.handleSubmit} className= {styles.emailContainerMobile}>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    onChange={formik.handleChange}
-                    value={formik.values.email}
-                    placeholder="Your Email"
-                    className={styles.inputFieldMobile}
-                />
-                <button type="submit" className={styles.submitEmailButtonMobile}>Get Early Access</button>
-            </form>
-        );
+    if (status === "sending") {
+        inputText = <div className={styles.confirmationText} style={{color: "#334E68"}}>
+            Please wait one second, we are adding you to the list for exclusive access...
+        </div>    
+    }
+    else if (status === "error") {
+        inputText = <div className={styles.confirmationText} style={{color: "#A0041E"}}>
+            This email is already in line for exclusive access. Please try another email.
+        </div> 
+    }
+    else if (status === "success") {
+        inputText = <div className={styles.confirmationText} style={{color: "#5C913B"}}>
+            Thank you for signing up! We will contact you soon with details for exclusive access.
+        </div>       
     }
     return (
-        <form onSubmit={formik.handleSubmit} className= {styles.emailContainer}>
+        <div>
+        {inputText}
+        <div className={styles.emailContainer}>
             <input
+                className={styles.inputFieldMobile}
+                ref={node => (email = node)}
                 type="email"
-                id="email"
-                name="email"
-                onChange={formik.handleChange}
-                value={formik.values.email}
                 placeholder="Your Email"
-                className={styles.inputField}
             />
-            <button type="submit" className={styles.submitEmailButton}>Get Early Access</button>
-        </form>
+            <button className={styles.submitEmailButtonMobile} onClick={submit}>
+                Get Early Access
+             </button>
+        </div>
+        </div>
     );
 };
-/*
-const container =
-    <div className={styles.emailContainer}>
-        <div className={styles.placeholderText}>
-            Your email
-            </div>
-        <button className={styles.submitEmailButton}>
-            Get Notified
-            </button>
-    </div>;
-return container;
-}*/
+
+function SubmitEmail() {
+    return (
+        <MailchimpSubscribe
+            url={process.env.REACT_APP_MAILCHIMP_URL}
+            render={({ subscribe, status, message }) => (
+                <CustomForm
+                    status={status}
+                    message={message}
+                    onValidated={formData => subscribe(formData)}
+                />
+            )}
+        />
+    );
+};
 
 export default SubmitEmail;

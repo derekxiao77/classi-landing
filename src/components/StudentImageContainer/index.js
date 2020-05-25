@@ -1,13 +1,14 @@
 import React from 'react';
 import stylesWeb from './StudentImageContainer.module.css';
 import stylesMobile from './MobileStudentImageContainer.module.css';
+import { isMobile } from 'react-device-detect'
+
 import shape2 from "../../assets/overview_shape2.png";
 import shape3 from "../../assets/overview_shape3.png";
 import shape4 from "../../assets/overview_shape4.png";
-import studentScreen from "../../assets/student_image.png";
 import homeScreen from "../../assets/home.png";
 import browseScreen from "../../assets/Browse.png";
-import { isMobile } from 'react-device-detect'
+import workoutScreen from "../../assets/workoutImage.png";
 
 const styles = { ...stylesWeb, ...stylesMobile }
 
@@ -24,7 +25,7 @@ function StudentImageContainer(props) {
         if (props.content === tileState.Friends) {
             returnImage =
                 <div className={styles.imageContainerMobile}>
-                    <img src={studentScreen} alt="" className={styles.phoneImageMobile} />
+                    <img src={workoutScreen} alt="" className={styles.phoneImageMobile} />
                 </div>
         }
         else if (props.content === tileState.Free) {
@@ -50,7 +51,7 @@ function StudentImageContainer(props) {
     }
     else {
         if (props.content === tileState.Friends) {
-            returnImage = <img src={studentScreen} alt="" className={styles.phoneImage} />
+            returnImage = <img src={workoutScreen} alt="" className={styles.phoneImage} />
         }
         else if (props.content === tileState.Free) {
             returnImage = <img src={homeScreen} alt="" className={styles.phoneImage} />

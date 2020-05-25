@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.b94bbc94.chunk.css",
-    "main.js": "/static/js/main.212459d3.chunk.js",
-    "main.js.map": "/static/js/main.212459d3.chunk.js.map",
+    "main.css": "/static/css/main.8fb3c208.chunk.css",
+    "main.js": "/static/js/main.a1b29373.chunk.js",
+    "main.js.map": "/static/js/main.a1b29373.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.9677c63d.js",
     "runtime-main.js.map": "/static/js/runtime-main.9677c63d.js.map",
-    "static/js/2.35a7dfea.chunk.js": "/static/js/2.35a7dfea.chunk.js",
-    "static/js/2.35a7dfea.chunk.js.map": "/static/js/2.35a7dfea.chunk.js.map",
+    "static/js/2.136b8989.chunk.js": "/static/js/2.136b8989.chunk.js",
+    "static/js/2.136b8989.chunk.js.map": "/static/js/2.136b8989.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.1b0ab5c8b2f8be5efe8dfc7a689c75ed.js": "/precache-manifest.1b0ab5c8b2f8be5efe8dfc7a689c75ed.js",
+    "precache-manifest.6b3c07f23abfbd7b04404e87c6ef9757.js": "/precache-manifest.6b3c07f23abfbd7b04404e87c6ef9757.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.b94bbc94.chunk.css.map": "/static/css/main.b94bbc94.chunk.css.map",
-    "static/js/2.35a7dfea.chunk.js.LICENSE.txt": "/static/js/2.35a7dfea.chunk.js.LICENSE.txt",
+    "static/css/main.8fb3c208.chunk.css.map": "/static/css/main.8fb3c208.chunk.css.map",
+    "static/js/2.136b8989.chunk.js.LICENSE.txt": "/static/js/2.136b8989.chunk.js.LICENSE.txt",
     "static/media/Browse.png": "/static/media/Browse.9a487078.png",
     "static/media/circularFont.css": "/static/media/CircularStd-MediumItalic.f31aaf0e.ttf",
     "static/media/Feed.png": "/static/media/Feed.b01cdff2.png",
@@ -22,12 +22,12 @@
     "static/media/overview_shape1.svg": "/static/media/overview_shape1.6b75b45e.svg",
     "static/media/overview_shape2.png": "/static/media/overview_shape2.9fa80aa8.png",
     "static/media/overview_shape3.png": "/static/media/overview_shape3.3d6ca469.png",
-    "static/media/student_image.png": "/static/media/student_image.c707d9ef.png"
+    "static/media/workoutImage.png": "/static/media/workoutImage.5bb5d0b0.png"
   },
   "entrypoints": [
     "static/js/runtime-main.9677c63d.js",
-    "static/js/2.35a7dfea.chunk.js",
-    "static/css/main.b94bbc94.chunk.css",
-    "static/js/main.212459d3.chunk.js"
+    "static/js/2.136b8989.chunk.js",
+    "static/css/main.8fb3c208.chunk.css",
+    "static/js/main.a1b29373.chunk.js"
   ]
 }

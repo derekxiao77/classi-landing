@@ -1,7 +1,7 @@
 .emailContainer {
     display: flex;
     align-items: center;
-    width: 418px;
+    width: auto;
     height: 63px;
     background: #FFFFFF;
     border: 1px solid rgba(161, 174, 183, 0.1);
@@ -18,7 +18,7 @@
     font-style: normal;
     font-weight: normal;
     line-height: 22px;
-    color: #B0B7C4;
+    color: #334E68;
 }
 
 /* can the button be right aligned? */
@@ -47,6 +47,16 @@
     color: #FFFFFF;
     outline: none;
     border: none;
+}
+
+.confirmationText {
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
 }
 
 input, textarea, select, a { outline: none; }

@@ -7,6 +7,7 @@ import OverviewContentContainer from './components/OverviewContentContainer'
 import OverviewImageContainer from './components/OverviewImageContainer'
 import StudentTiles from './components/StudentTiles'
 import InstructorTiles from './components/InstructorTiles'
+import SignUp from './components/SignUp';
 
 function App() {
   return ( 
@@ -21,6 +22,9 @@ function App() {
             </SectionContainer>
             <SectionContainer color="#E7F4F6" height="initial" overflowY="initial" overflowX="hidden">
                 <InstructorTiles/>
+            </SectionContainer>
+            <SectionContainer color='#F4F5F6' height="initial" overflowY="hidden" overflowX='hidden' heightWeb="350px">
+                <SignUp/>
             </SectionContainer>
         </div>
   );

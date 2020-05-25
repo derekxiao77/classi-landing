@@ -1,0 +1,55 @@
+.signUpContainerMobile {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    z-index: 1;
+}
+
+.headerTextMobile {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+    color: #102A43;
+    text-align: center;
+}
+
+.signUpTextMobile {
+    margin-bottom: 40px;
+    width: 80%;
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    color: #334E68;
+}
+
+.celebrateEmojiMobile {
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+/* large circle */
+.shape1Mobile {
+    position: absolute;
+    right: 95%;
+    top: 25%;
+    width: 150px;
+}
+
+/* large circle */
+.shape3Mobile {
+    position: absolute;
+    left: 80%;
+    bottom: -25%;
+    width: 150px;
+}

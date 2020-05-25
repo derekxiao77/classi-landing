@@ -16,7 +16,7 @@ function SectionContainer(props) {
         );
     }
     return (
-        <div className={styles.sectionContainerLayout} style={{backgroundColor: props.color}}>
+        <div className={styles.sectionContainerLayout} style={{backgroundColor: props.color, height: props.heightWeb}}>
             {props.children}
         </div>
     );

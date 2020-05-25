@@ -1,12 +1,23 @@
 .headerContainer {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: space-between;
   
     margin-top: 20px;
-    width: 80%;
+    width: 75%;
 }
 
 .classiLogo {
     height: 26px;
     width: 112px;
+}
+
+.contactText {
+    margin-left: 15px;
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+    color: #334E68;
 }

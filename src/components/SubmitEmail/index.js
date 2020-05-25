@@ -45,7 +45,7 @@ function SubmitEmail() {
                 placeholder="Your Email"
                 className={styles.inputField}
             />
-            <button type="submit" className={styles.submitEmailButton}>Submit</button>
+            <button type="submit" className={styles.submitEmailButton}>Get Early Access</button>
         </form>
     );
 };

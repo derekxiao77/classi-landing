@@ -11,8 +11,7 @@
 }
 
 .inputField {
-    position: absolute;
-    left: 25px;
+    margin-left: 25px;
     border: none;
     font-size: 17px;
     font-family: Circular Std;
@@ -25,12 +24,15 @@
 /* can the button be right aligned? */
 
 .submitEmailButton {
+    position: relative;
+    margin-left: auto;
+    margin-right: 10px;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    left: 272px;
-    width: 132px;
+
+    width: 150px;
     height: 43px;
     background: #F86A6A;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.05);
@@ -44,6 +46,7 @@
     letter-spacing: -0.3px;
     color: #FFFFFF;
     outline: none;
+    border: none;
 }
 
 input, textarea, select, a { outline: none; }

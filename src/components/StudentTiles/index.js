@@ -44,7 +44,7 @@ function ContentFriends() {
         <div>
             <h3>#WatchOnClassi</h3>
             <h2>Fitness is more fun with friends</h2>
-            <span>Stay healthy and hang out with your friends at the same time.
+            <span>Stay fit and hang out with friends at the same time.
             Turn any live stream into a video chat by creating a private group
             and inviting your friends.
             </span>
@@ -58,9 +58,9 @@ function ContentFree() {
             <h3>#WatchOnClassi</h3>
             <h2>Any live class. Any instructor. Free.</h2>
             <span>
-                We believe that staying healthy shouldn't cost money.
-                Take any live class you want, with any instrutor you want,
-                and as many classes as you want - all free.
+                Classi users can watch as many live classes as they want for free.
+                For more flexibility, Classi Premium gives users full 
+                access to watch any past class and save classes to watch again in the future.
             </span>
         </div>
     );
@@ -70,11 +70,10 @@ function ContentGoals() {
     return (
         <div>
             <h3>#WatchOnClassi</h3>
-            <h2>The largest selection of live fitness classes</h2>
+            <h2>Find your perfect class</h2>
             <span>
-                Whether you want to eat healthier or be more active,
-                you can find the perfect class on Classi. Getting that summer
-                body is now as simple as pressing play.
+                Classi offers a wide range of wellness classes from home workouts to home cooking.
+                Reaching your fitness goals is now as simple as pressing play.
             </span>
         </div>
     );

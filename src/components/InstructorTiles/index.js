@@ -44,9 +44,9 @@ function ContentFriends() {
             <h3>#TeachOnClassi</h3>
             <h2>Get paid to teach what you love</h2>
             <span>
-                Given the current environment, we know that many fitness studios
-                have unforunately had to close their doors. We want to give everyone
-                an opportunity to continue earning money through live classes
+                Classi provides an opportunity for anyone to teach a class
+                and begin monetizing his/her content. Instructors are compensated 
+                based off views as well as directly by other users through tips.
             </span>
         </div>
     );
@@ -56,11 +56,10 @@ function ContentFree() {
     return (
         <div>
             <h3>#TeachOnClassi</h3>
-            <h2>Engage directly with your followers</h2>
+            <h2>Engage directly with followers</h2>
             <span>
-                Classi provides a unique platform for you to engage directly with your
-                followers. Classi’s social feed also allows your content to be discovered
-                by new followers.
+                Connect with your followers in and out of class. Classi’s social feed allows
+                you to continue engaging with your followers even after the class has finished.
             </span>
         </div>
     );
@@ -72,9 +71,8 @@ function ContentGoals() {
             <h3>#TeachOnClassi</h3>
             <h2>Create truly interactive class experiences</h2>
             <span>
-                It’s difficult to keep a class interactive when talking to a phone.
-                Classi allows instructors to invite their own friends to join the
-                stream and interact with them during the class with video and audio.
+                On most live fitness apps, users can only interact with the instructor by typing comments.
+                Instructors on Classi can interact with select users in real-time through video and audio.
             </span>
         </div>
     );

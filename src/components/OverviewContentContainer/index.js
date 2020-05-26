@@ -40,7 +40,7 @@ function OverviewContentContainer() {
             <div className={styles.overviewContentContainerMobile}>
                 <LaunchDate />
                 <div className={styles.welcomeTextMobile}> The world’s first marketplace for live fitness classes with friends </div>
-                <div className={styles.welcomeCaptionMobile}> Finally experience home workouts that don't feel like home workouts.</div>
+                <div className={styles.welcomeCaptionMobile}> Experience home workouts that don't feel like home workouts.</div>
                 <SubmitEmail />
             </div>
         );

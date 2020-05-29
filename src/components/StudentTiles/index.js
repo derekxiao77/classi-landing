@@ -44,7 +44,7 @@ function ContentFriends() {
         <div>
             <h3>#WatchOnClassi</h3>
             <h2>Fitness is more fun with friends</h2>
-            <span>Stay fit and hang out with friends at the same time.
+            <span>Workout and hangout with friends at the same time.
             Turn any live stream into a video chat by creating a private group
             and inviting your friends.
             </span>

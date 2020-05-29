@@ -44,9 +44,8 @@ function ContentFriends() {
             <h3>#TeachOnClassi</h3>
             <h2>Get paid to teach what you love</h2>
             <span>
-                Classi provides an opportunity for anyone to teach a class
-                and begin monetizing his/her content. Instructors are compensated 
-                based off views as well as directly by other users through tips.
+                Any user can post a live stream and start teaching today! Classi allows users to 
+                monetize their content through custom micro-subscriptions and tips. 
             </span>
         </div>
     );

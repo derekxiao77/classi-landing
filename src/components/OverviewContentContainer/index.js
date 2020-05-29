@@ -39,7 +39,7 @@ function OverviewContentContainer() {
         return (
             <div className={styles.overviewContentContainerMobile}>
                 <LaunchDate />
-                <div className={styles.welcomeTextMobile}> The world’s first marketplace for live fitness classes with friends </div>
+                <div className={styles.welcomeTextMobile}> The first marketplace for live fitness classes with friends </div>
                 <div className={styles.welcomeCaptionMobile}> Experience home workouts that don't feel like home workouts.</div>
                 <SubmitEmail />
             </div>
@@ -48,7 +48,7 @@ function OverviewContentContainer() {
     return (
         <div className={styles.overviewContentContainer}>
             <LaunchDate />
-            <h1 className={styles.welcomeText}> The world’s first marketplace for live fitness classes with friends </h1>
+            <h1 className={styles.welcomeText}> The first marketplace for live fitness classes with friends </h1>
             <SubmitEmail />
         </div>
     );

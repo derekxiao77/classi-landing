@@ -2,21 +2,23 @@ import React from "react";
 import stylesWeb from "./SubmitEmail.module.css";
 import stylesMobile from "./SubmitEmailMobile.module.css";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
-import mixpanel from "mixpanel-browser";
-
-//mixpanel.init("15293bd0fe445968de678302fe178e62");
+import { Mixpanel } from "../Mixpanel";
 
 const styles = { ...stylesWeb, ...stylesMobile };
 
 const CustomForm = ({ status, message, onValidated }) => {
   let email;
   let inputText;
-  const submit = () =>
-    email &&
-    email.value.indexOf("@") > -1 &&
-    onValidated({
-      EMAIL: email.value,
-    });
+  const submit = () => {
+    if (email && email.value.indexOf("@") > -1) {
+      onValidated({
+        EMAIL: email.value,
+      });
+      Mixpanel.emailSubmitted({
+        "user-email": email.value,
+      });
+    }
+  };
 
   if (status === "sending") {
     inputText = (

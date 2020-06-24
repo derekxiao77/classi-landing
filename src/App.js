@@ -9,11 +9,13 @@ import StudentTiles from "./components/StudentTiles";
 import InstructorTiles from "./components/InstructorTiles";
 import SignUp from "./components/SignUp";
 import { Mixpanel } from "./components/Mixpanel";
+import { FbPixel } from "./components/FacebookPixel";
 
 function App() {
   return (
     <div className="Landing-page">
       {Mixpanel.pageView()}
+      {FbPixel.pageView()}
       <Header />
       <SectionContainer color="#F4F5F6">
         <OverviewContentContainer />

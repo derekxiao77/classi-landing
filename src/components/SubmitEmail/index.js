@@ -3,6 +3,7 @@ import stylesWeb from "./SubmitEmail.module.css";
 import stylesMobile from "./SubmitEmailMobile.module.css";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import { Mixpanel } from "../Mixpanel";
+import { FbPixel } from "../FacebookPixel";
 
 const styles = { ...stylesWeb, ...stylesMobile };
 
@@ -17,6 +18,7 @@ const CustomForm = ({ status, message, onValidated }) => {
       Mixpanel.emailSubmitted({
         "user-email": email.value,
       });
+      FbPixel.trackEvent("Email Submission Attempt");
     }
   };
 

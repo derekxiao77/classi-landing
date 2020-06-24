@@ -13,6 +13,9 @@ let actions = {
   emailSubmitted: (props) => {
     mixpanel.track("emailSubmited", props);
   },
+  emailSubmittedFail: (props) => {
+    mixpanel.track("emailSubmitedFail", props);
+  },
 
   clickFriends: (props) => {
     mixpanel.track("clickFriends", { section: "student", ...props });

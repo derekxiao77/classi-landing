@@ -28,6 +28,9 @@ const CustomForm = ({ status, message, onValidated }) => {
       </div>
     );
   } else if (status === "error") {
+    Mixpanel.emailSubmittedFail({
+      "user-email": "fail",
+    });
     inputText = (
       <div className={styles.confirmationText} style={{ color: "#A0041E" }}>
         This email is already in line for exclusive access. Please try another

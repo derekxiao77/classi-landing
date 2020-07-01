@@ -1,41 +1,41 @@
 .overviewContentContainerMobile {
-    margin-top: 20%;
-    align-self: center;
-    width: 90%;
-    z-index: 1;
+  margin-top: 20%;
+  align-self: center;
+  width: 90%;
+  z-index: 1;
 }
 
 .welcomeTextMobile {
-    margin-bottom: 20px;
-    width: 80%;
-    word-wrap: normal;
-    font-family: Circular Std;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 40px;
-    color: #102A43;
+  margin-bottom: 20px;
+  width: 80%;
+  word-wrap: normal;
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  color: #102a43;
 }
 
 .welcomeCaptionMobile {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
-    font-family: Circular Std;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 19px;
-    color: #334E68;
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  color: #334e68;
 }
 
 .launchDateContainerMobile {
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 
-    width: 315px;
-    height: 36px;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-  }
+  width: 340px;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}

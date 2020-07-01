@@ -3,7 +3,7 @@ import ReactPixel from "react-facebook-pixel";
 if (process.env.NODE_ENV === "production") {
   ReactPixel.init("2718731281784340");
 } else {
-  ReactPixel.init("2718731281784340");
+  ReactPixel.init("2320268361602787");
 }
 
 let actions = {
